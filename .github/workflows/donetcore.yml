@@ -4,10 +4,6 @@ jobs:
     build:
         runs-on: windows-latest
         steps:
-            - uses: actions/checkout@v1
-            - name: Install Nuget
-              uses: nuget/setup-nuget@v1
-              with:
-                nuget-version: '5.x'
+            - uses: actions/checkout
             - name: Build
               run: .\build.cmd
